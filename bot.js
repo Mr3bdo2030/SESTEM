@@ -248,41 +248,41 @@ client.on('message', message => {
 
  message.author.sendMessage(`
  **
-__~~ Versus System ~~__ By: » FT  , Bõ#0001
+__~~ Exp System ~~__ By: » ༺☬عبدو بن دوخي بن بابلو☬༻#5016
 
 ╔[❖════════════❖]╗
-             Prefix = ' & '
+             Prefix = ' S '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
         Admin Commands
 ╚[❖════════════❖]╝
 
-❖ &kick <mention> ➾ طرد شخص من السيرفر
+❖ Skick <mention> ➾ طرد شخص من السيرفر
 
-❖ &ban <mention> ➾ باند لي الشخص
+❖ Sban <mention> ➾ باند لي الشخص
 
-❖ &clear ➾ مسح الشات
+❖ Sclear ➾ مسح الشات
 
-❖ &mute <mention> ➾ اعطاء ميوت لي الشخص
+❖ Smute <mention> ➾ اعطاء ميوت لي الشخص
 
-❖ &unmute <mention> ➾ فك الميوت عن الشخص
+❖ Sunmute <mention> ➾ فك الميوت عن الشخص
 
-❖ &bc <message> ➾ لأرسال رسالة لجميع الأعضاء على الخاص
+❖ Sbc <message> ➾ لأرسال رسالة لجميع الأعضاء على الخاص
 
 ╔[❖════════════❖]╗
          General  Commands
 ╚[❖════════════❖]╝
 
-❖ &member ➾ لمعرفة الأعضاء الموجودة في السيرفر
+❖ Smember ➾ لمعرفة الأعضاء الموجودة في السيرفر
 
-❖ &id ➾ معرفة الايدي
+❖ Sid ➾ معرفة الايدي
 
-❖ &ping ➾ لروئية بينق البوت
+❖ Sping ➾ لروئية بينق البوت
 
-❖ &bot ➾ معلومات عن البوت
+❖ Sbot ➾ معلومات عن البوت
 
-❖ &server ➾ معلومات السيرفر 
+❖ Sserver ➾ معلومات السيرفر 
 
 ╔[❖════════════❖]╗
          Music  Commands
@@ -290,22 +290,22 @@ __~~ Versus System ~~__ By: » FT  , Bõ#0001
 
 
 ╔[❖════════════❖]╗
-             Prefix = ' - '
+             Prefix = ' S '
 ╚[❖════════════❖]╝
 
-❖&p  『تشغيل الاغاني』
+❖Sp  『تشغيل الاغاني』
 
-❖&sk 『تخطي الاغاني』
+❖Ssk 『تخطي الاغاني』
 
-❖&st  『إيقاف الاغاني』
+❖Sst  『إيقاف الاغاني』
 
-❖&vol  『تحكم في درجة الصوت』
+❖Svol  『تحكم في درجة الصوت』
 
-❖&que『قائمة الانتظار من الأغاني』
+❖Sque『قائمة الانتظار من الأغاني』
 
-❖&pau  『أيقاف الاغاني』
+❖Spau  『أيقاف الاغاني』
 
-❖&res  『تشغيل الاغاني』
+❖Sres  『تشغيل الاغاني』
 
 ==================================================================
 
@@ -317,7 +317,7 @@ __~~ Versus System ~~__ By: » FT  , Bõ#0001
 });
 
 client.on("message", msg => {
-    var prefix = "&";
+    var prefix = "S";
 if(msg.content.startsWith (prefix + "id")) {
 if(!msg.channel.guild) return msg.reply('**❌ اسف لكن هذا الامر للسيرفرات فقط **');         
 const embed = new Discord.RichEmbed();
@@ -337,7 +337,7 @@ msg.channel.send({embed: embed})
 });
 
 client.on('message', message => {
-                 var prefix = "&"
+                 var prefix = "S"
            if (message.content.startsWith(prefix + "id")) {
      var args = message.content.split(" ").slice(1);
      let user = message.mentions.users.first();
@@ -408,7 +408,7 @@ let embed = new Discord.RichEmbed()
 
 
 client.on("message", message => {
-        var prefix = "&";// البرفكس
+        var prefix = "S";// البرفكس
     if(message.content.startsWith(prefix + "setwlc")) {
         let args = message.mentions.channels.first();
             if(!args) message.channel.send("** منشن روم . :x:**").then(m => {    
@@ -436,7 +436,7 @@ m.delete(1500);
 });
 
 client.on("message", message => {
-        var prefix = "&";//البرفكس
+        var prefix = "S";//البرفكس
     if(message.content.startsWith(prefix + "setout")) {
         let args = message.mentions.channels.first();
             if(!args) message.channel.send("** منشن روم . :x:**");
@@ -462,8 +462,8 @@ client.on("message", message => {
 });
 
 const config = {
-    prefix : "&",
-    owner : [' 522866582192390174 '],
+    prefix : "S",
+    owner : [' 424134723716120578 '],
 };
 //By Request of [ function ]
 var color = new Discord.RichEmbed().setColor('#000000').setColor('#36393e')
@@ -881,7 +881,7 @@ client.on('message', message => {
     if (message.content === 'Shelp-music') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك**')
-        .setDescription('** ( $ ) برفكس البوت**')
+        .setDescription('** ( S ) برفكس البوت**')
         .addField('Play أوامر', '1.play    2.p    3.search    4.ply')
         .addField('Skip أوامر', '1.Skip    2.ski    3.s    4.sk')
         .addField('Stop أوامر', '1.Stop    2.st    3.sto')
