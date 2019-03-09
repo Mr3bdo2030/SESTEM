@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const Canvas = require('canvas')
+const Canvas = require('FLH.COM')
 const client = new Discord.Client();
 const prefix = '=';
  
@@ -3136,7 +3136,7 @@ const lol = JSON.parse(fs.readFileSync("lol.json", "utf8"))
 function hi (message, args){
     var embed = new Discord.RichEmbed()
     .setAuthor(client.user.username , client.user.avatarURL)
-    .setFooter("All copyrights reseaved. | 2018©")
+    .setFooter("All copyrights reseaved. | 2030©")
     .setColor("RANDOM")
     .setDescription(args)
     .setThumbnail(client.user.avatarURL);
@@ -3264,7 +3264,7 @@ client.on('guildMemberAdd', member => {
     const ei = invites[member.guild.id];
     const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
     const inviter = client.users.get(invite.inviter.id);
-    const stewart = member.guild.channels.find("chicago");
+    const stewart = member.guild.channels.find("flh.com");
      stewart.send(`<@${member.user.id}> تمت الدعوه من <@${inviter.id}>`);
    //  stewart.send(`<@${member.user.id}> joined using invite code ${invite.code} from <@${inviter.id}>. Invite was used ${invite.uses} times since its creation.`);
   }); 
